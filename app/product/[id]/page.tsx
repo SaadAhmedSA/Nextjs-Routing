@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const page = async ({params}:{params:{id :any}}) => {
@@ -10,7 +11,7 @@ const page = async ({params}:{params:{id :any}}) => {
     <div className='flex justify-center items-center '>
       <div className="card bg-base-100  w-96 shadow-xl">
         <figure>
-          <img
+          <Image
           width={300}
             src={item.images}
             alt="Shoes" />

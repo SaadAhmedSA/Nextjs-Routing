@@ -1,4 +1,5 @@
 // "use client"
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -17,7 +18,7 @@ const Product = async () => {
       {data.map((item :any)=>{
         return <div className="card bg-base-100 w-96 shadow-xl">
         <figure>
-          <img
+          <Image
           width={200}
             src={item.images}
             alt="Shoes" />
